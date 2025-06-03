@@ -68,8 +68,16 @@
         #submit{
             background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220) );
             width: 100;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        } 
+        #submit:hover{
+            background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195) );
         }
-
     </style>
 
 </head>
@@ -93,7 +101,6 @@
                     <input type="tel" name="telefone" id="telefone" class="inputUser" required>
                     <label for="nome" class="labelInput">Telefone</label>
                 </div>
-                <br>
                 <p>Sexo:</p>
                 <input type="radio" id="feminino" name="genero" value="feminino" required>
                 <label for="feminino">Feminino</label>
@@ -106,7 +113,7 @@
                  <br><br>
                 <label for="data_nasc"><b>Data de Nascimento:</b></label>
                 <input type="date" name="data_nasc" id="data_nasc"required>
-               <br><br>
+               <br><br><br>
                 <div class="inputBox">
                     <input type="text" name="cidade" id="cidade" class="inputUser" required>
                     <label for="cidade" class="labelInput">Cidade</label>
